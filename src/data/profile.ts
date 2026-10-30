@@ -87,7 +87,8 @@ export const profile: ActorProfile = {
     ad: [{ year: "[연도]", title: "[작품명 1]", role: "[배역]", note: "[브랜드]" }],
   },
   showreel: { title: "강수민 자기소개 영상", youtubeId: "RwTctoXdgxk" },
-  clips: [{ title: "[클립 제목 1]" }, { title: "[클립 제목 2]" }, { title: "[클립 제목 3]" }],
+  // 연기 클립이 생기면 { title, youtubeId } 형태로 추가하세요. 비어 있으면 줄이 숨겨집니다.
+  clips: [],
   gallery: [
     { alt: "프로필 사진", caption: "프로필 컷" },
     { alt: "일상 사진", caption: "일상 컷" },
