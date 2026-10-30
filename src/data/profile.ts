@@ -64,7 +64,7 @@ export const profile: ActorProfile = {
   headshot: { alt: "배우 강수민 헤드샷" },
   facts: [
     { label: "생년", value: "[YYYY]" },
-    { label: "신체", value: "[000cm · 00kg]" },
+    { label: "신체", value: "164cm · 59kg" },
     { label: "소속사", value: "[소속사명]" },
     { label: "학력", value: "[학교 · 전공]" },
     { label: "특기", value: "[예: 무용, 노래, 사투리]" },
