@@ -42,12 +42,14 @@ export interface ActorProfile {
   clips: Clip[];
   gallery: Photo[];
   contact: {
-    agency: string;
-    manager: string;
+    /** 소속사가 생기면 { name, manager } 를 넣으세요. 없으면 연락처에서 줄이 숨겨지고 안내 문구가 바뀝니다. */
+    agency?: { name: string; manager?: string };
     phone: string;
-    email: string;
+    email?: string;
     instagram?: string;
     youtube?: { name: string; url: string };
+    /** 블로그 주소. 예: { name: "수만두의 일기", url: "https://blog.naver.com/..." } */
+    blog?: { name: string; url: string };
   };
 }
 
@@ -72,7 +74,7 @@ export const profile: ActorProfile = {
   facts: [
     { label: "생년", value: "1999년" },
     { label: "신체", value: "164cm · 59kg" },
-    { label: "소속사", value: "[소속사명]" },
+    { label: "소속사", value: "미소속" },
     { label: "학력", value: "[학교 · 전공]" },
     { label: "특기", value: "뮤지컬, 노래" },
     { label: "언어", value: "한국어" },
@@ -96,10 +98,7 @@ export const profile: ActorProfile = {
     { src: "/images/gallery-4.jpg", alt: "흰 셔츠와 청바지 차림으로 무릎을 감싸고 앉은 배우 강수민", position: "50% 40%" },
   ],
   contact: {
-    agency: "[소속사명]",
-    manager: "[담당 매니저]",
     phone: "010-4764-9815",
-    email: "[이메일 주소]",
     instagram: "kang_sumandu",
     youtube: { name: "숨의 가장자리", url: "https://www.youtube.com/@hi-sumandu_kang" },
   },
