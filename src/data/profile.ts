@@ -80,7 +80,7 @@ export const profile: ActorProfile = {
     stage: [{ year: "[연도]", title: "[작품명 1]", role: "[배역]", note: "[극단 · 극장]" }],
     ad: [{ year: "[연도]", title: "[작품명 1]", role: "[배역]", note: "[브랜드]" }],
   },
-  showreel: { title: "강수민 쇼릴" },
+  showreel: { title: "강수민 자기소개 영상", youtubeId: "RwTctoXdgxk" },
   clips: [{ title: "[클립 제목 1]" }, { title: "[클립 제목 2]" }, { title: "[클립 제목 3]" }],
   gallery: [
     { alt: "프로필 사진", caption: "프로필 컷" },
