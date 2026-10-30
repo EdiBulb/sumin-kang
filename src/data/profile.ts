@@ -74,8 +74,8 @@ export const profile: ActorProfile = {
     { label: "신체", value: "164cm · 59kg" },
     { label: "소속사", value: "[소속사명]" },
     { label: "학력", value: "[학교 · 전공]" },
-    { label: "특기", value: "[예: 무용, 노래, 사투리]" },
-    { label: "언어", value: "[한국어 · 영어]" },
+    { label: "특기", value: "뮤지컬, 노래" },
+    { label: "언어", value: "한국어" },
   ],
   filmography: {
     drama: [
