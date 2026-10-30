@@ -23,6 +23,7 @@ export function PhotoFrame({ photo, className, sizes, priority, placeholderLabel
           sizes={sizes}
           priority={priority}
           className="object-cover"
+          style={photo.position ? { objectPosition: photo.position } : undefined}
         />
       ) : (
         <div

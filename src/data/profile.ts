@@ -19,6 +19,8 @@ export interface Photo {
   src?: string;
   alt: string;
   caption?: string;
+  /** 프레임 비율과 사진 비율이 다를 때 보여줄 위치 (CSS object-position). 예: "50% 30%" */
+  position?: string;
 }
 
 export interface Clip {
@@ -62,7 +64,11 @@ export const profile: ActorProfile = {
   copyrightYear: 2026,
   tagline: "정직하게 살자",
   bio: "[짧은 자기소개 2~3문장 — 연기를 시작한 계기, 어떤 배우가 되고 싶은지]",
-  headshot: { alt: "배우 강수민 헤드샷" },
+  headshot: {
+    src: "/images/headshot.jpg",
+    alt: "흰 셔츠와 청바지 차림으로 앉아 미소 짓는 배우 강수민",
+    position: "50% 30%",
+  },
   facts: [
     { label: "생년", value: "[YYYY]" },
     { label: "신체", value: "164cm · 59kg" },
