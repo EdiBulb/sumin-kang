@@ -2,7 +2,7 @@ import { profile } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
 
 export function Contact() {
-  const { agency, manager, phone, email, instagram } = profile.contact;
+  const { agency, manager, phone, email, instagram, youtube } = profile.contact;
 
   const items = [
     { label: "소속사", value: `${agency} · ${manager}` },
@@ -17,6 +17,9 @@ export function Contact() {
             external: true,
           },
         ]
+      : []),
+    ...(youtube
+      ? [{ label: "YouTube", value: youtube.name, href: youtube.url, external: true }]
       : []),
   ];
 

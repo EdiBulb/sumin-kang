@@ -45,6 +45,7 @@ export interface ActorProfile {
     phone: string;
     email: string;
     instagram?: string;
+    youtube?: { name: string; url: string };
   };
 }
 
@@ -59,7 +60,7 @@ export const profile: ActorProfile = {
   nameKo: "강수민",
   nameEn: "Sumin Kang",
   copyrightYear: 2026,
-  tagline: "[한 줄 소개 — 동생분이 직접 고른 문장이 들어갑니다]",
+  tagline: "정직하게 살자",
   bio: "[짧은 자기소개 2~3문장 — 연기를 시작한 계기, 어떤 배우가 되고 싶은지]",
   headshot: { alt: "배우 강수민 헤드샷" },
   facts: [
@@ -93,5 +94,6 @@ export const profile: ActorProfile = {
     phone: "[010-0000-0000]",
     email: "[이메일 주소]",
     instagram: "[인스타그램 아이디]",
+    youtube: { name: "숨의 가장자리", url: "https://www.youtube.com/@hi-sumandu_kang" },
   },
 };

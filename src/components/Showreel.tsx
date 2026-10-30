@@ -52,6 +52,17 @@ export function Showreel() {
             ))}
           </ul>
         )}
+        {profile.contact.youtube && (
+          <a
+            href={profile.contact.youtube.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-flex min-h-12 items-center gap-2.5 rounded-full border-[1.5px] border-cream px-7 font-medium hover:bg-cream hover:text-ink"
+          >
+            <PlayIcon size={16} />
+            유튜브 채널 「{profile.contact.youtube.name}」 보러 가기
+          </a>
+        )}
       </div>
     </section>
   );
