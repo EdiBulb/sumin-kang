@@ -98,9 +98,9 @@ export const profile: ActorProfile = {
   contact: {
     agency: "[소속사명]",
     manager: "[담당 매니저]",
-    phone: "[010-0000-0000]",
+    phone: "010-4764-9815",
     email: "[이메일 주소]",
-    instagram: "[인스타그램 아이디]",
+    instagram: "kang_sumandu",
     youtube: { name: "숨의 가장자리", url: "https://www.youtube.com/@hi-sumandu_kang" },
   },
 };
