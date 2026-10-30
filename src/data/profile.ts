@@ -90,10 +90,10 @@ export const profile: ActorProfile = {
   // 연기 클립이 생기면 { title, youtubeId } 형태로 추가하세요. 비어 있으면 줄이 숨겨집니다.
   clips: [],
   gallery: [
-    { alt: "프로필 사진", caption: "프로필 컷" },
-    { alt: "일상 사진", caption: "일상 컷" },
-    { alt: "작품 스틸컷", caption: "작품 스틸컷" },
-    { alt: "무대 사진", caption: "무대 사진" },
+    { src: "/images/gallery-1.jpg", alt: "검은 터틀넥 차림으로 정면을 응시하는 배우 강수민 클로즈업", position: "50% 30%" },
+    { src: "/images/gallery-2.jpg", alt: "검은 터틀넥과 청바지 차림으로 앉아 있는 배우 강수민", position: "50% 25%" },
+    { src: "/images/gallery-3.jpg", alt: "흰 셔츠 차림으로 미소 짓는 배우 강수민", position: "50% 25%" },
+    { src: "/images/gallery-4.jpg", alt: "흰 셔츠와 청바지 차림으로 무릎을 감싸고 앉은 배우 강수민", position: "50% 40%" },
   ],
   contact: {
     agency: "[소속사명]",
