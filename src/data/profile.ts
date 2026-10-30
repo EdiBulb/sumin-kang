@@ -63,7 +63,7 @@ export const profile: ActorProfile = {
   nameEn: "Sumin Kang",
   copyrightYear: 2026,
   tagline: "정직하게 살자",
-  bio: "[짧은 자기소개 2~3문장 — 연기를 시작한 계기, 어떤 배우가 되고 싶은지]",
+  bio: "꾸미지 않은 얼굴로 카메라 앞에 서고 싶습니다. ‘정직하게 살자’는 말처럼, 인물의 감정을 과장하지도 숨기지도 않고 있는 그대로 전하는 배우가 되려 합니다. 숨 한 번, 눈빛 하나에도 진심이 담기도록 오늘도 연습합니다.",
   headshot: {
     src: "/images/headshot.jpg",
     alt: "흰 셔츠와 청바지 차림으로 앉아 미소 짓는 배우 강수민",
