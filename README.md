@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 배우 강수민 Sumin Kang — 프로필 사이트
 
-## Getting Started
+Next.js 16 (App Router) · TypeScript · Tailwind CSS v4
 
-First, run the development server:
+## 시작하기
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev   # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 콘텐츠 수정
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+모든 내용은 **`src/data/profile.ts`** 한 파일에서 관리합니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `[대괄호]` 값은 실제 정보로 교체하세요.
+- 작품 추가: `filmography.drama` 같은 배열에 `{ year, title, role, note }`를 넣으면 됩니다. 비어 있는 분류는 탭에서 자동으로 숨겨집니다.
+- 사진: `public/images/`에 파일을 넣고 `src: "/images/headshot.jpg"`처럼 지정하세요. `src`가 없으면 placeholder가 보입니다.
+- 영상: YouTube 링크 `https://youtu.be/XXXX`의 `XXXX`를 `youtubeId`에 넣으세요.
 
-## Learn More
+## 구조
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/            layout(폰트·메타데이터), page(섹션 조립), globals.css(디자인 토큰)
+  components/     섹션별 컴포넌트 — Filmography만 클라이언트 컴포넌트(탭)
+  data/profile.ts 타입 정의 + 콘텐츠
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 배포
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub에 올린 뒤 Vercel에서 Import 하면 끝입니다. 커스텀 도메인(예: suminkang.com)은 Vercel 설정에서 연결합니다.
