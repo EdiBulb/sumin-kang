@@ -70,7 +70,7 @@ export const profile: ActorProfile = {
     position: "50% 30%",
   },
   facts: [
-    { label: "생년", value: "[YYYY]" },
+    { label: "생년", value: "1999년" },
     { label: "신체", value: "164cm · 59kg" },
     { label: "소속사", value: "[소속사명]" },
     { label: "학력", value: "[학교 · 전공]" },
